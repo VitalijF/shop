@@ -30,7 +30,7 @@ public class MySqlRoleDao implements RoleDao {
     private Role getRoleFromResultSet(ResultSet resultSet) {
         Role role = new Role();
         role.setId(resultSet.getInt("id"));
-        role.setName(RoleName.getValue(resultSet.getString("id")));
+        role.setName(RoleName.getValue(resultSet.getString("name")));
         return role;
     }
 }

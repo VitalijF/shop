@@ -11,13 +11,16 @@ public final class QueryConstants {
     //PRODUCT
     public static final String GET_ALL_PRODUCTS = "SELECT * FROM product";
     public static final String GET_PRODUCT_BY_ID = "SELECT * FROM product WHERE id = ?";
-    public static final String CREATE_PRODUCT = "INSERT INTO product (id, name, description, price) VALUES (?, ?, ?, ?)";
+    public static final String CREATE_PRODUCT = "INSERT INTO product (id, name, description, price, quantity, category_id) VALUES (?, ?, ?, ?, ?, ?)";
 
     //BUCKET
     public static final String GET_BUCKET_BY_ID = "SELECT * FROM bucket WHERE id = ?";
     public static final String CREATE_BUCKET = "INSERT INTO bucket (id, created_date) VALUES (?, ?)";
 
     //ROLE
-    public static final String GET_ROLE_BY_ID = "SELECT * FROM roles WHERE id = ?";
+    public static final String GET_ROLE_BY_ID = "SELECT * FROM role WHERE id = ?";
+
+    //CATEGORY
+    public static final String GET_CATEGORY_BY_ID = "SELECT * FROM category WHERE id = ?";
 
 }
