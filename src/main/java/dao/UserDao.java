@@ -11,6 +11,8 @@ public interface UserDao {
 
     User getById(int userId);
 
+    User getByEmail(String email);
+
     void create(User user);
 
     void update(int id, User user);

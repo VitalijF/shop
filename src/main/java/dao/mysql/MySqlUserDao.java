@@ -1,4 +1,4 @@
-package dao.impl;
+package dao.mysql;
 
 import dao.RoleDao;
 import dao.UserDao;
@@ -50,6 +50,11 @@ public class MySqlUserDao implements UserDao {
             }
         }
         return user;
+    }
+
+    @Override
+    public User getByEmail(String email) {
+        return null;
     }
 
     @Override

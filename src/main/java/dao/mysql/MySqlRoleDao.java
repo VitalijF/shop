@@ -1,4 +1,4 @@
-package dao.impl;
+package dao.mysql;
 
 import dao.RoleDao;
 import lombok.SneakyThrows;
